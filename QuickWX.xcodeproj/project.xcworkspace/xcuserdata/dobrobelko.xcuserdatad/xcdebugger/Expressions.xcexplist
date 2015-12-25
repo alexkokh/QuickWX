@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AirportTableViewController.prepareForSegue(UIStoryboardSegue, sender : AnyObject?) -&gt; ():AirportTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.AirportFlightCategoryLabel">
+            </PersistentString>
+            <PersistentString
+               value = "segue.identifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AirportTableViewController.getNearestAirports(CLLocation, distanceNM : Double) -&gt; [(airport : Airport, distance : Double)]:AirportTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "airportDesc">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.getLocation() -&gt; ():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AirportTableViewController.cellCallback(String, metar : String) -&gt; ():AirportTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nearestAirports[i].airport">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FavoritesTableViewController.viewWillAppear(Bool) -&gt; ():FavoritesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "favDescs">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AirportInfoViewController.callbackTAF(TAF) -&gt; ():AirportInfoViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentNearestAttempt">
+            </PersistentString>
+            <PersistentString
+               value = "nearestAirports">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "str[i]">
+            </PersistentString>
+            <PersistentString
+               value = "airports">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AirportDesc.Code.getter:Airport.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Code">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AirportTableViewController.cellCallback(String, metar : METAR) -&gt; ():AirportTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nearestAirports[i]">
+            </PersistentString>
+            <PersistentString
+               value = "nearestAirports">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AirportTableViewCell.displayMETAR() -&gt; ():AirportTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "airport">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Airport.sessionHandler(NSData?, response : NSURLResponse?, error : NSError?) -&gt; ():Airport.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AirportTableViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:AirportTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textView.frame.size.height">
+            </PersistentString>
+            <PersistentString
+               value = "cell.AirportFlightCategoryLabel.layer.backgroundColor">
+            </PersistentString>
+            <PersistentString
+               value = "textView.contentSize.height">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "nearestAirports">
+            </PersistentString>
+            <PersistentString
+               value = "nearestAirports[idx]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Airport.getTAF((String) -&gt; ()) -&gt; ():Airport.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Code">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SearchTableViewController.searchAirports(String) -&gt; ():SearchTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "airportDesc[i]">
+            </PersistentString>
+            <PersistentString
+               value = "seachString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Airport.parser(NSXMLParser, foundCharacters : String) -&gt; ():Airport.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AirportInfoViewController.callbackTAF(String) -&gt; ():AirportInfoViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentNearestAttempt">
+            </PersistentString>
+            <PersistentString
+               value = "airport?.taf?.rawText">
+            </PersistentString>
+            <PersistentString
+               value = "nearestAirports">
+            </PersistentString>
+            <PersistentString
+               value = "nearestAirports![currentNearestAttempt].desc.Code">
+            </PersistentString>
+            <PersistentString
+               value = "airport">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.locationManager(CLLocationManager, didUpdateLocations : [CLLocation]) -&gt; ():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Airport.getMETAR((String) -&gt; ()) -&gt; ():Airport.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Code">
+            </PersistentString>
+            <PersistentString
+               value = "queryIsInProgress">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AirportTableViewController.cellCallback(String) -&gt; ():AirportTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nearestAirports[i].airport">
+            </PersistentString>
+            <PersistentString
+               value = "nearestAirports">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Airport.tafReady(TAF) -&gt; ():Airport.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "callbackTAF">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AirportTableViewController.updateTextFont(UITextView) -&gt; ():AirportTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textView.text">
+            </PersistentString>
+            <PersistentString
+               value = "textView.font!.pointSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AirportInfoViewController.SaveToFavorites() -&gt; ():AirportInfoViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "airport!.desc">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Airport.parser(NSXMLParser, didStartElement : String, namespaceURI : String?, qualifiedName : String?, attributes : [String : String]) -&gt; ():Airport.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AirportInfoViewController.viewDidLoad() -&gt; ():AirportInfoViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationItem.backBarButtonItem?.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Airport.getMETAR((String) -&gt; (), hoursBeforeNow : Int) -&gt; ():Airport.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Code">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SearchTableViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:SearchTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "searchResults">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AirportTableViewCell.cellCallback(String) -&gt; ():AirportTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "airport">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "METARParser.parser(NSXMLParser, didStartElement : String, namespaceURI : String?, qualifiedName : String?, attributes : [String : String]) -&gt; ():Airport.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "emptyString">
+            </PersistentString>
+            <PersistentString
+               value = "metar">
+            </PersistentString>
+            <PersistentString
+               value = "currentString">
+            </PersistentString>
+            <PersistentString
+               value = "metarString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Airport.sessionHandlerTAF(NSData?, response : NSURLResponse?, error : NSError?) -&gt; ():Airport.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AirportTableViewController.viewDidLoad() -&gt; ():AirportTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "airportDesc">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Airport.metarReady(METAR) -&gt; ():Airport.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Code">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AirportTableViewController.locationManager(CLLocationManager, didUpdateLocations : [CLLocation]) -&gt; ():AirportTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nearestAirports">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FavoritesTableViewController.viewDidLoad() -&gt; ():FavoritesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "favorites">
+            </PersistentString>
+            <PersistentString
+               value = "favorites[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "METARParser.parser(NSXMLParser, foundCharacters : String) -&gt; ():Airport.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "emptyString">
+            </PersistentString>
+            <PersistentString
+               value = "currentString">
+            </PersistentString>
+            <PersistentString
+               value = "metarString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AirportTableViewCell.(cellCallback(AirportTableViewCell) -&gt; (String) -&gt; ()).(closure #1):AirportTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "airport">
+            </PersistentString>
+            <PersistentString
+               value = "code">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "METARParser.parser(NSXMLParser, didEndElement : String, namespaceURI : String?, qualifiedName : String?) -&gt; ():Airport.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "metar">
+            </PersistentString>
+            <PersistentString
+               value = "currentString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
