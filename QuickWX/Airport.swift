@@ -90,7 +90,8 @@ class Airport
     var callbackTAF: CallbackTAF?
     var metar: METAR?
     var taf: TAF?
-    var queryIsInProgress: Bool
+    var metarQueryIsInProgress: Bool
+    var tafQueryIsInProgress: Bool
     var distance: Double
     var isFavorite: Bool {
         get {
@@ -111,7 +112,8 @@ class Airport
         desc = description
         hasRecentMETAR = false
         hasRecentTAF = false
-        queryIsInProgress = false
+        metarQueryIsInProgress = false
+        tafQueryIsInProgress = false
         distance = 0
     }
     
@@ -119,7 +121,7 @@ class Airport
     {
         objc_sync_enter(self)
         
-        if queryIsInProgress {
+        if metarQueryIsInProgress {
             objc_sync_exit(self)
             return
         }
@@ -131,7 +133,7 @@ class Airport
         let task = session.dataTaskWithURL(url!, completionHandler: sessionHandlerMETAR)
         task.resume()
         
-        queryIsInProgress = true
+        metarQueryIsInProgress = true
         objc_sync_exit(self)
     }
     
@@ -139,7 +141,7 @@ class Airport
     {
         objc_sync_enter(self)
         
-        if queryIsInProgress {
+        if tafQueryIsInProgress {
             objc_sync_exit(self)
             return
         }
@@ -151,7 +153,7 @@ class Airport
         let task = session.dataTaskWithURL(url!, completionHandler: sessionHandlerTAF)
         task.resume()
         
-        queryIsInProgress = true
+        tafQueryIsInProgress = true
         objc_sync_exit(self)
     }
     
@@ -179,14 +181,14 @@ class Airport
     {
         self.metar = metar
         hasRecentMETAR = true
-        queryIsInProgress = false
+        metarQueryIsInProgress = false
         callbackMETAR?(Code)
     }
     
     func tafReady(var taf: TAF)
     {
         hasRecentTAF = true
-        queryIsInProgress = false
+        tafQueryIsInProgress = false
         
         taf.rawText = taf.rawText.stringByReplacingOccurrencesOfString("FM", withString: "\nFM")
         

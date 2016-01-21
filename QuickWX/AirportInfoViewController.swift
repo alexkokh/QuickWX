@@ -14,6 +14,7 @@ class AirportInfoViewController: UIViewController {
     var airportsDesc: [AirportDesc]?
     var currentNearestAttempt = 0
     var nearestAirports = [Airport]()
+    var timer: NSTimer?
     
     @IBAction func FavoritesButtonTapped(sender: AnyObject) {
 
@@ -58,14 +59,14 @@ class AirportInfoViewController: UIViewController {
         AirportMETARTextView.textContainer.lineFragmentPadding = 0
         AirportMETARTextView.textContainerInset = UIEdgeInsetsZero
         
-        var metarText: String
-        if airport?.metar?.rawText != "" {
-            metarText = (airport?.metar?.rawText)!
+        if airport?.metar != nil {
+                setMETARandFlightCategory()
         } else {
-            metarText = "No WX"
+            AirportMETARTextView.text = "Loading METAR..."
+            timer = NSTimer(timeInterval: 1.0, target: self, selector: "timerFunc", userInfo: nil, repeats: true)
+            NSRunLoop.currentRunLoop().addTimer(timer!, forMode: NSRunLoopCommonModes)
         }
         
-        AirportMETARTextView.text = metarText
         AirportTAFTextView.textContainer.lineFragmentPadding = 0
         AirportTAFTextView.textContainerInset = UIEdgeInsetsZero
         
@@ -76,9 +77,31 @@ class AirportInfoViewController: UIViewController {
             AirportTAFTextView.text = airport?.taf?.rawText
         }
         
-        setFlightCategoty(AirportFlightCategoryLabel, flightCategory: (self.airport!.metar?.flightCategory)!)
-        
         setFavoritesIcon()
+    }
+    
+    func setMETARandFlightCategory()
+    {
+        if airport?.metar != nil {
+            var metarText: String
+            if airport?.metar?.rawText != "" {
+                metarText = (airport?.metar?.rawText)!
+            }
+            else {
+                metarText = "No WX"
+            }
+            
+            AirportMETARTextView.text = metarText
+            setFlightCategoty(AirportFlightCategoryLabel, flightCategory: (self.airport!.metar?.flightCategory)!)
+        }
+    }
+    
+    func timerFunc()
+    {
+        if airport?.metar != nil {
+            timer?.invalidate()
+            setMETARandFlightCategory()
+        }
     }
     
     func callbackTAF(taf: TAF)
